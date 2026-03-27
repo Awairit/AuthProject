@@ -4,6 +4,8 @@ from django.shortcuts import render
 def home_page_view(request):
     return render(request, 'testapp/home.html')
 
+from django.contrib.auth.decorators import login_required
+@login_required
 def java_page_view(request):
     return render(request, 'testapp/java.html')
 
