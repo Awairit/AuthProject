@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 from pathlib import Path
 
+from django.conf.global_settings import LOGIN_REDIRECT_URL
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = BASE_DIR / 'templates'
@@ -25,6 +27,8 @@ SECRET_KEY = 'django-insecure-2my2&8#6(=%%!_!3ewmqaka2!kicp7@90pkzs&oqo@9s2+im@d
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+LOGIN_REDIRECT_URL = '/'
 
 ALLOWED_HOSTS = []
 
